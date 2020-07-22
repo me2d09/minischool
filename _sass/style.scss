@@ -741,6 +741,9 @@ h1, h2, h3, h4, h5,
 			height: 400px;
 		}
 	}
+	.speaker-noimg{
+		width: 180px;
+	}
 	.text{
 		width: calc(100% - 180px);
 		padding-left: 40px;
@@ -1480,16 +1483,16 @@ textarea.form-control {
 	position: relative;
 	background: rgba(255,255,255,.1);
 	.user-img{
-		width: 100px;
-		height: 100px;
+		width: 200px;
+		height: 200px;
 		position: relative;
 		margin: 0 auto;
 		// margin-top: -75px;
 		&:after{
 			position: absolute;
-			top: -15px;
+			top: -30px;
 			left: -20%;
-			bottom: -15px;
+			bottom: -30px;
 			right: 0;
 			content: '';
 			width: 70%;
