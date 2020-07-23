@@ -647,6 +647,13 @@ h1, h2, h3, h4, h5,
 	display: block;
 	.nav-link-wrap{
 	}
+	.nav{
+		@include media-breakpoint-down(sm){
+			padding-right: 0px;
+			// width: 100%;
+			//margin-bottom: 5px;
+		}
+	}
 	.nav-pills{
 		width: 100%;
 		display: block;
@@ -792,6 +799,13 @@ h1, h2, h3, h4, h5,
 	.tab-content{
 		// background: $white;
 		@include border-radius(0);
+		
+		.collapse, .collapsing {
+			@include media-breakpoint-down(sm){
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
 	}
 }
 .speaker-wrap{
@@ -808,8 +822,8 @@ h1, h2, h3, h4, h5,
 		@include media-breakpoint-down(sm){
 			margin-bottom: 20px;
 			width: 100%;
-			height: 400px;
-			display: none;
+			height: 200px;
+			//display: none;
 		}
 	}
 	.speaker-noimg{
@@ -1029,7 +1043,7 @@ h1, h2, h3, h4, h5,
 //ABOUT
 .img-2{
 	@include media-breakpoint-down(sm){
-		height: 600px;
+		height: 220px;
 	}
 }
 .wrap-about{}
