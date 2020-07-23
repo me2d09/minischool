@@ -168,29 +168,30 @@
 		</section>
 
 
-		<section id="schedule" class="ftco-section">
+		<section id="accordion" class="ftco-section">
 			<div class="container">
 				<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <h2 class="mb-3">Mini-school Schedule</h2>
           </div>
         </div>
-        <div class="ftco-schedule">
+        <div class="ftco-schedule" id="accordion">
 					<div class="row">
             <div class="col-md-3 nav-link-wrap text-center text-md-right">
-	            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link ftco-animate active" id="v-pills-0-tab" data-toggle="pill" href="#v-pills-0" role="tab" aria-controls="v-pills-0" aria-selected="true">Zeroth Day <span>21 July 2019</span></a>
-					<a class="nav-link ftco-animate" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false">First Day <span>21 July 2019</span></a>
-					<a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Second Day <span>23 July 2019</span></a>
-					<a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Third Day <span>22 July 2019</span></a>
-					<a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Fourth Day <span>22 July 2019</span></a>
+	            <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+					<a class="nav-link ftco-animate" data-toggle="collapse" href="#v-pills-0" role="tab">Sunday <span>21 July 2019</span></a>
+					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-1" role="tab">Monday <span>21 July 2019</span></a>
+					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-2" role="tab">Tuesday <span>23 July 2019</span></a>
+					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-3" role="tab">Wednesday <span>22 July 2019</span></a>
+					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-4" role="tab">Thursday <span>22 July 2019</span></a>
 	            </div>
 	          </div>
-	          <div class="col-md-9 tab-wrap">
-	            
-	            <div class="tab-content" id="v-pills-tabContent">
-
-	              <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="day-0-tab">
+	          <div class="col-md-9 tab-wrap nav nav-pills" role="tab">
+	            <div class="tab-content">	
+				  <a class="nav-link-down ftco-animate" data-toggle="collapse" href="#v-pills-0" role="tab">
+					Sunday, 21 July 2019
+				  </a>
+	              <div class="show collapse" id="v-pills-0" role="tabpanel" data-parent="#accordion">
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
 	              		<div class="speaker-noimg"></div>
 	              		<div class="text">
@@ -206,9 +207,11 @@
 	              			<p class="location"><span class="icon-map-o mr-2"></span>will be announced</p>
 	              		</div>
 	              	</div>
-	              </div>
-
-	              <div class="tab-pane fade" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-day-1-tab">
+				  </div>
+				  <a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-1" role="tab">
+					  Monday, 21 July 2019
+				  </a>
+	              <div class="collapse" id="v-pills-1" role="tabpanel" data-parent="#accordion">
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
 	              		<div class="img speaker-img" style="background-image: url(images/img3.jpg);"></div>
 	              		<div class="text">
@@ -244,8 +247,10 @@
 						</div>
 					</div>
 	              </div>
-	              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
-					
+				  <a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-2" role="tab">
+					  Tuesday, 21 July 2019
+				  </a>
+	              <div class="collapse" id="v-pills-2" role="tabpanel" data-parent="#accordion">
 					<div class="speaker-wrap ftco-animate d-md-flex">
 						<div class="img speaker-img" style="background-image: url(images/img7.jpg);"></div>
 						<div class="text">
@@ -270,7 +275,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+				<a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-3" role="tab">
+					Wednesday, 21 July 2019
+				</a>
+				<div class="collapse" id="v-pills-3" role="tabpanel" data-parent="#accordion">
 					<div class="speaker-wrap ftco-animate d-md-flex">
 						<div class="img speaker-img" style="background-image: url(images/img6.jpg);"></div>
 						<div class="text">
@@ -302,7 +310,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
+				<a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-4" role="tab">
+					Thursday, 21 July 2019
+				</a>
+				<div class="collapse" id="v-pills-4" role="tabpanel" data-parent="#accordion">
 					<div class="speaker-wrap ftco-animate d-md-flex">
 						<div class="img speaker-img" style="background-image: url(images/img2.jpg);"></div>
 						<div class="text">
