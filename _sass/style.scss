@@ -10,10 +10,10 @@ $black: #000000;
 $black-light: lighten($black,40%);
 $primary: #00887A;
 $primary-dark: darken($primary, 30%);
-$border-style: 1px solid transparent;
+$border-style: 2px solid transparent;
 
 @if $light-theme {
-	//$border-style: 5px dashed $black;
+	$border-style: 2px solid $black;
 	$black: #010440; 
 	$black-light: lighten($black,10%);
 	$primary: #d9e33e;
