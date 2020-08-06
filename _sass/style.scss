@@ -10,8 +10,10 @@ $black: #000000;
 $black-light: lighten($black,40%);
 $primary: #00887A;
 $primary-dark: darken($primary, 30%);
+$border-style: 1px solid transparent;
 
 @if $light-theme {
+	//$border-style: 5px dashed $black;
 	$black: #010440; 
 	$black-light: lighten($black,10%);
 	$primary: #d9e33e;
@@ -631,7 +633,7 @@ h1, h2, h3, h4, h5,
 		background: $primary !important;
 		@if $light-theme {
 			border-radius: $rounded-pill;
-			border: 5px dashed #010440;
+			border: $border-style !important;
 			color: $black !important;
 		  } @else {
 			border: 1px solid $primary !important;
@@ -695,13 +697,12 @@ h1, h2, h3, h4, h5,
 		.nav-link{
 			padding: 16px 30px !important;
 			margin-bottom: 0;
+			border: $border-style;
 			@if $light-theme {
 				color: transparentize($black, 0.6);
-				border: 5px dashed $black;
 				@include border-left-radius(50rem);
 			  } @else {
 				color: $white;
-				border: 1px solid transparent;
 				@include border-radius(0);
 			  }
 			font-size: 18px;
@@ -761,12 +762,11 @@ h1, h2, h3, h4, h5,
 			}
 			&:not(.collapsed){
 				// color: rgba(0,0,0,.7);
+				border: $border-style;
 				@if $light-theme {
 					color: $black;
-					border: 5px dashed $black;
 				  } @else {
 					color: $white;
-					border: 1px solid transparent;
 				  }
 				@include transition(.3s);
 				
@@ -794,13 +794,12 @@ h1, h2, h3, h4, h5,
 			font-weight: 700;
 			position: relative;
 			display: inline-block;
+			border: $border-style;
 			@if $light-theme {
 				color: $black;
-				border: 5px dashed $black;
 				@include border-top-radius(50rem);
 			  } @else {
 				color: rgba(255,255,255,.7);
-				border: 1px solid transparent;
 				@include border-radius(0);
 			  }
 			background: $primary;
