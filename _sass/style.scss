@@ -619,6 +619,8 @@ h1, h2, h3, h4, h5,
 
 //BUTTON
 .btn {
+	font-weight: bold;
+	font-size: 1.25rem;
 	cursor: pointer;
 	@include border-radius(3px);
 	box-shadow: none!important;
