@@ -290,6 +290,12 @@
 							<h2>Student flash talk contest</h2>
 							<p>Each student will present their own research in a short presentation (5 minutes strict). 
 								The best presentation will win a small prize!</p>
+								<p>List of signed-in talks (alphabetical order):</p>
+								<ul>
+							  {% for talk in site.talks %}
+								<li>{{ talk.title }} ({{ talk.presenter }})</li>
+							  {% endfor %}
+							</ul>
 							<span class="time">14:00 - 17:00</span>
 							<p class="location"><span class="icon-map-o mr-2"></span>ELI Beamlines, Dolní Břežany, CZ</p>
 						</div>

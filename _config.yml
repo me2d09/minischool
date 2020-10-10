@@ -1,4 +1,4 @@
-title: Neutron Beer
+title: Minischool
 email: cermak@mag.mff.cuni.cz
 description: "This site is dedicated to the regular meetings of the Czech neutron community: neutron beer."
 baseurl: ""
@@ -7,9 +7,9 @@ twitter_username: petrscience
 github_username:  me2d09
 future: true
 collections:
-  events:
-    output: true
-    permalink: /:collection/:name
+  - talks
+    #output: false
+    #permalink: /:collection/:name
 defaults:
   - scope:
       path: ""
