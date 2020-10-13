@@ -1,10 +1,8 @@
 title: Minischool
 email: cermak@mag.mff.cuni.cz
-description: "This site is dedicated to the regular meetings of the Czech neutron community: neutron beer."
+description: "This site is dedicated to czech-bavarian mini-school."
 baseurl: ""
-url: "https://neutron.beer/"
-twitter_username: petrscience
-github_username:  me2d09
+url: "https://mini-school.eu/"
 future: true
 collections:
   - talks
