@@ -1,6 +1,8 @@
 ---
   title: "Phase Determination and Potential Reconstruction for in situ Polarized Neutron Reflectometry"
   presenter: Alexander Book
+  order: 5
+  time: "14:29"
 ---
 Polarized neutron reflectometry (PNR) is a powerful tool to investigate the atomic and magnetic structure of thin films. However, since the
 phase information is lost during the PNR measurement, the reflectivity cannot be mapped uniquely to a scattering potential. To solve this so-

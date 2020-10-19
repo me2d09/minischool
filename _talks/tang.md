@@ -1,6 +1,8 @@
 ---
   title: "Development of an indirect spectrometer Mushroom"
   presenter: Ran Tang
+  order: 8
+  time: "14:47"
 ---
 Mushroom is a concept of an indirect neutron spectrometer with its secondary spectrometer based on
 a super flat-cone analyser with an array of position-sensitive detectors (PSD) below it. This combination

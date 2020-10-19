@@ -1,6 +1,8 @@
 ---
   title: "Self Organisation of Mixed Superconducting States under the Application of a Current"
   presenter: Xaver Brems
+  order: 14
+  time: "15:23"
 ---
 The intermediate mixed state (IMS) in a superconductor is found between 
 complete magnetic flux expulsion (Meissner state) and the penetration of 

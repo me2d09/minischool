@@ -1,6 +1,8 @@
 ---
   title: "Comprehensive multidimension characterization of novel interpolyelectrolyte complexes in aqueous solution: looking from time, size and q-space perspectives"
   presenter: Anastasiia Murmiliuk
+  order: 4
+  time: "14:23"
 ---
 Rational design of nanomaterials aimed for targeted drug delivery requires understanding of the basic principles of the complex relationship between their morphology, structure and loading or release properties that is the goal of our fundamental research.
 

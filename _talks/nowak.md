@@ -1,6 +1,8 @@
 ---
   title: "Temperature dependent optical and magneto-optical spectroscopy of Co doped NiMnGa film"
   presenter: Lukáš Nowak
+  order: 16
+  time: "15:35"
 ---
 Heusler compounds that undergo martensitic transformation are of scientific interest due to their potential for future applications [1]. The most known alloy of this class is Ni-Mn-Ga, which has been intensively studied during the last decade as it exhibits magnetically induced reorientation [2]. The martensitic transformation to low symmetry phase,  which is the key to this  behavior,  can  be  tailored  by  proper  doping.  Detailed  understanding  of  changes  in  the electronic  structure  induced  by  doping  is  therefore  necessary  for  future  applications  of  these compounds.
 

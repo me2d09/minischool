@@ -1,6 +1,8 @@
 ---
   title: "Investitations of ferroelectric microtubes by Raman spectroscopy"
   presenter: Anastasiia Pylypets
+  order: 13
+  time: "15:17"
 ---
 Ferroelectric superlattices attract scientists’ attention
 because of novel effects which occur there in comparison to bulk materials.

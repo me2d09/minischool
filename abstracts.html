@@ -1,0 +1,10 @@
+---
+  title: list abstracts
+---
+{% assign sorted = site.talks | sort: 'order'  %}
+{% for talk in sorted %}
+<h4>{{ talk.time }}</h4>
+<h3>{{ talk.title }}</h3>
+<h4><i>{{ talk.presenter }}</i></h4>
+{{ talk.content}}
+{% endfor %}

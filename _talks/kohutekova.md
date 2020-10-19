@@ -1,6 +1,8 @@
 ---
   title: "N-Guanidyl-Formamide Salts as Potential Nonlinear Optical Materials"
   presenter: Soňa Kohúteková
+  order: 7
+  time: "14:41"
 ---
 The current interest focused on nonlinear optical (NLO) materials is above all motivated by their various technical applications. The examples of wide range of usage include generation of new laser lines - e.g. second harmonic generation (SHG), stimulated Raman scattering (SRS), etc. - or applications in the field of optical communication. 
 

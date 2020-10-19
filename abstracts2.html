@@ -1,0 +1,7 @@
+---
+  title: list abstracts
+---
+{% assign sorted = site.talks | sort: 'order'  %}
+{% for talk in sorted %}
+<b>{{ talk.presenter }}</b><br />
+{% endfor %}
