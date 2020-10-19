@@ -319,7 +319,7 @@ function makeTimer() {
 
 }
 
-setInterval(function() { makeTimer(); }, 1000);
+//setInterval(function() { makeTimer(); }, 1000);
 
 
 
