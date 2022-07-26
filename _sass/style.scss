@@ -4,7 +4,9 @@
 $font-primary: 'Nunito Sans',Arial, sans-serif;
 
 $light-theme: false !default;;
+$theme2022: false !default;;
 
+$round-corners: false;
 $white: #fff;
 $black: #000000;
 $black-light: lighten($black,40%);
@@ -13,12 +15,22 @@ $primary-dark: darken($primary, 30%);
 $border-style: 2px solid transparent;
 
 @if $light-theme {
+	$round-corners: true;
 	$border-style: 2px solid $black;
 	$black: #010440; 
 	$black-light: lighten($black,10%);
 	$primary: #d9e33e;
 	$primary-dark: #c6cb37;
-  } 
+} 
+
+@if $theme2022 {
+	$round-corners: true;
+	$border-style: 2px solid $black;
+	$black: #010440; 
+	$black-light: lighten($black,10%);
+	$primary: #ff9966;
+	$primary-dark: #ff9966;
+} 
 
 // $darken: #3a4348;
 $secondary: #77A6F7;
@@ -347,7 +359,7 @@ h1, h2, h3, h4, h5,
 		span{
 			font-size: 54px;
 			font-weight: 800;
-			@if $light-theme {
+			@if $round-corners {
 				color: $black;
 			  } @else {
 				color: $primary;
@@ -425,7 +437,7 @@ h1, h2, h3, h4, h5,
 		font-size: 40px;
 		font-weight: 500;
 		border-left: 1px solid rgba(0,0,0,.05);
-		@if $light-theme {
+		@if $round-corners {
 			color: $black;
 		  } @else {
 			color: $primary;
@@ -445,9 +457,17 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
+.header-banner{
+	background: #ffffffdd;
+	padding: 20px;
+	@include border-radius(5px);
+	margin-right: 20px;
+	-webkit-box-shadow: 0px 10px 31px -21px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 10px 31px -21px rgba(0,0,0,0.33);
+	box-shadow: 0px 10px 31px -21px rgba(0,0,0,0.33);
+}
 .request-form{
-	background: $white;
+	background: #ffffffdd;
 	padding: 30px;
 	@include border-radius(5px);
 
@@ -631,7 +651,7 @@ h1, h2, h3, h4, h5,
 	}
 	&.btn-primary {
 		background: $primary !important;
-		@if $light-theme {
+		@if $round-corners {
 			border-radius: $rounded-pill;
 			border: $border-style !important;
 			color: $black !important;
@@ -640,7 +660,7 @@ h1, h2, h3, h4, h5,
 			color: $white !important;
 		  }
 		&:hover {
-			@if $light-theme {
+			@if $round-corners {
 				background: $primary-dark !important;
 				color: $white !important;;
 			} @else {
@@ -698,7 +718,7 @@ h1, h2, h3, h4, h5,
 			padding: 16px 30px !important;
 			margin-bottom: 0;
 			border: $border-style;
-			@if $light-theme {
+			@if $round-corners {
 				color: transparentize($black, 0.6);
 				@include border-left-radius(50rem);
 			  } @else {
@@ -726,7 +746,7 @@ h1, h2, h3, h4, h5,
 				content: '';
 				border-style: solid;
 				border-width: 10px 0 10px 10px;
-				@if $light-theme {
+				@if $round-corners {
 					border-color: transparent transparent transparent $black;
 				  } @else {
 					border-color: transparent transparent transparent $primary;
@@ -745,7 +765,7 @@ h1, h2, h3, h4, h5,
 				font-weight: 200;
 			}
 			@include media-breakpoint-down(sm){
-				@if $light-theme {
+				@if $round-corners {
 					color: transparentize($black,0.6);
 				  } @else {
 					color: rgba(255,255,255,.7);
@@ -754,7 +774,7 @@ h1, h2, h3, h4, h5,
 			}
 			&:hover{
 				background: darken($primary,5%);
-				@if $light-theme {
+				@if $round-corners {
 					color: $black;
 				  } @else {
 					color: $white;
@@ -763,7 +783,7 @@ h1, h2, h3, h4, h5,
 			&:not(.collapsed){
 				// color: rgba(0,0,0,.7);
 				border: $border-style;
-				@if $light-theme {
+				@if $round-corners {
 					color: $black;
 				  } @else {
 					color: $white;
@@ -795,7 +815,7 @@ h1, h2, h3, h4, h5,
 			position: relative;
 			display: inline-block;
 			border: $border-style;
-			@if $light-theme {
+			@if $round-corners {
 				color: $black;
 				@include border-top-radius(50rem);
 			  } @else {
@@ -821,7 +841,7 @@ h1, h2, h3, h4, h5,
 				content: '';
 				border-style: solid;
 				border-width: 10px 10px 00px 10px;
-				@if $light-theme {
+				@if $round-corners {
 					border-color: $black transparent transparent transparent;
 				  } @else {
 					border-color: $primary transparent transparent transparent;
@@ -1120,7 +1140,7 @@ h1, h2, h3, h4, h5,
 		z-index: 0;
 		span{
 			font-size:70px;
-			@if $light-theme {
+			@if $round-corners {
 				color: $black;
 			  } @else {
 				color: $white;
@@ -1133,20 +1153,20 @@ h1, h2, h3, h4, h5,
 		h3{
 			font-size: 18px;
 			font-weight: 500;
-			@if $light-theme {
+			@if $round-corners {
 				color: $black;
 			  } @else {
 				color: $white;
 			  }
 		}
-		@if $light-theme {
+		@if $round-corners {
 			color: transparentize($black, 0.6);
 		  } @else {
 			color: rgba(255,255,255,.8);
 		  }
 		
 		a{
-			@if $light-theme {
+			@if $round-corners {
 				color: $black;
 			  } @else {
 				color: $white;
@@ -1357,7 +1377,7 @@ textarea.form-control {
 	font-size: 16px;
 	background: #000;
 	padding: 7em 0;
-	@if $light-theme {
+	@if $round-corners {
 		color: $primary;
 	  } 
 	.ftco-footer-logo {

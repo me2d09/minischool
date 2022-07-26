@@ -1,5 +1,5 @@
 ---
   layout: main
-  mainstyle: light-style
+  mainstyle: style2022
 ---
 text

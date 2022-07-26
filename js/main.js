@@ -295,7 +295,7 @@
 
 function makeTimer() {
 
-		var endTime = new Date("18 October 2020 19:00:00 GMT+02:00");			
+		var endTime = new Date("19 October 2022 18:00:00 GMT+02:00");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -319,7 +319,7 @@ function makeTimer() {
 
 }
 
-//setInterval(function() { makeTimer(); }, 1000);
+setInterval(function() { makeTimer(); }, 1000);
 
 
 
