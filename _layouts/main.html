@@ -177,159 +177,34 @@
           </div>
         </div>
         <div class="ftco-schedule" id="accordion">
-					<div class="row">
+		  <div class="row">
             <div class="col-md-3 nav-link-wrap text-center text-md-right">
 	            <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
-					<a class="nav-link ftco-animate" data-toggle="collapse" href="#v-pills-0" role="tab">Sunday <span>18 October 2020</span></a>
-					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-1" role="tab">Monday <span>19 October 2020</span></a>
-					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-2" role="tab">Tuesday <span>20 October 2020</span></a>
-					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-3" role="tab">Wednesday <span>21 October 2020</span></a>
-					<a class="nav-link ftco-animate collapsed" data-toggle="collapse" href="#v-pills-4" role="tab">Thursday <span>22 October 2020</span></a>
+					{% for x in site.data.schedule2022 %}
+					<a class="nav-link ftco-animate {% if forloop.index0 != 0 %} collapsed {%- endif -%}" data-toggle="collapse" href="#v-pills-{{forloop.index0}}" role="tab">{{ x.date | replace: ", ", "<span>" }}</span></a>
+					{% endfor %}
 	            </div>
 	          </div>
 	          <div class="col-md-9 tab-wrap nav nav-pills" role="tab">
-	            <div class="tab-content">	
-				  <a class="nav-link-down ftco-animate" data-toggle="collapse" href="#v-pills-0" role="tab">
-					Sunday, 18 October 2020
+	            <div class="tab-content">
+				{% for x in site.data.schedule2022 %}
+				  <a class="nav-link-down ftco-animate {% if forloop.index0 != 0 %} collapsed {%- endif -%}" data-toggle="collapse" href="#v-pills-{{forloop.index0}}" role="tab">
+					{{ x.date }}
 				  </a>
-	              <div class="show collapse" id="v-pills-0" role="tabpanel" data-parent="#accordion">
+	              <div class="{%- if forloop.index0 == 0 -%}show {% endif %} collapse" id="v-pills-{{forloop.index0}}" role="tabpanel" data-parent="#accordion">
+				{% for e in x.events %}	  
 	              	<div class="speaker-wrap ftco-animate d-md-flex">
-	              		<div class="img speaker-img" style="background-image: url(images/img9.jpg);"></div>
+	              		<div class="img speaker-img" style="background-image: url({{ e.image }});"></div>
 	              		<div class="text">
-	              			<h2>Informal “get to know each other” event</h2>
-	              			<span class="time">19:00 - 21:00</span>
-	              			<p class="location"><span class="icon-map-o mr-2"></span>will be announced</p>
+	              			<h2>{{ e.name }}</h2>
+							{{ e.text | markdownify  }}
+	              			<span class="time">{{ e.time }}</span>
+	              			<p class="location"><span class="icon-map-o mr-2"></span>{{ e.place }}</p>
 	              		</div>
 	              	</div>
+				{% endfor %}
 				  </div>
-				  <a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-1" role="tab">
-					  Monday, 19 October 2020
-				  </a>
-	              <div class="collapse" id="v-pills-1" role="tabpanel" data-parent="#accordion">
-	              	<div class="speaker-wrap ftco-animate d-md-flex">
-	              		<div class="img speaker-img" style="background-image: url(images/img3.jpg);"></div>
-	              		<div class="text">
-	              			<h2>Lectures on neutron scattering techniques</h2>
-	              			<p>The lectures will give a broad overview on the different neutron scattering techniques available
-								at the MLZ:<br>
-								<ul>
-									<li> Neutron diffraction (Dr. Anatoliy Senyshyn) <a href="/assets/Diffraction.pdf"><span class="icon-file-pdf-o"></span> slides</a></li>
-									<li>Small angle neutron scattering (Dr. Sebastian Mühlbauer) <a href="/assets/SANS.pdf"><span class="icon-file-pdf-o"></span> slides</a></li>
-									<li>Inelastic neutron scattering (Dr. Astrid Schneidewind)</li>
-									<li>Neutron spin echo techniques (Dr. Johanna K. Jochum) <a href="/assets/SpinEcho.pdf"><span class="icon-file-pdf-o"></span> slides</a></li>
-								</ul></p>
-	              			<span class="time">09:00 - 12:00</span>
-	              			<p class="location"><span class="icon-map-o mr-2"></span>MLZ, Garching, DE</p>
-	              		</div>
-	              	</div>
-	              	<div class="speaker-wrap ftco-animate d-md-flex">
-	              		<div class="img speaker-img" style="background-image: url(images/img8.jpg);"></div>
-	              		<div class="text">
-	              			<h2>Tour of the FRM II reactor</h2>
-	              			<p>We will see the reactor pool and learn how neutrons are produced. 
-								The tour will continue in the neutron guidehall and experimental hall, where 26 state-of-the-art instruments are operated.</p>
-	              			<span class="time">14:00 - 17:00</span>
-	              			<p class="location"><span class="icon-map-o mr-2"></span>MLZ, Garching, DE</p>
-	              		</div>
-					  </div>
-	              </div>
-				  <a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-2" role="tab">
-					  Tuesday, 20 October 2020
-				  </a>
-	              <div class="collapse" id="v-pills-2" role="tabpanel" data-parent="#accordion">
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img7.jpg);"></div>
-						<div class="text">
-							<h2>Lectures on crystal growth and laser based techniques</h2>
-							<p>In Prague we will start with talks on magneto optics and sample growth before visiting the MGML facilities.<br>
-								<ul>
-								<li>Magneto optics (Dr. Martin Veis) <a href="/assets/Magnetooptics.pdf"><span class="icon-file-pdf-o"></span> slides</a></li>
-							    <li>Sample growth (Dr. Ross Harvey Colman) <a href="/assets/CrystalGrowth.pdf"><span class="icon-file-pdf-o"></span> slides</a></li></ul>
-							<span class="time">12:00 - 14:00</span>
-							<p class="location"><span class="icon-map-o mr-2"></span>MGML Karlov campus, Prague, CZ</p>
-						</div>
-					</div>
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img5.jpg);"></div>
-						<div class="text">
-							<h2>Tour of the MGML Karlov campus</h2>
-							<p> After the lectures, there will be a guided tour through the crystal growth and pressure labs at Karlov Campus.</p>
-							<span class="time">14:30 - 16:00</span>
-							<p class="location"><span class="icon-map-o mr-2"></span>MGML Karlov campus, Prague, CZ</p>
-						</div>
-					</div>
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img11.jpg);"></div>
-						<div class="text">
-							<h2>Tour of the MGML Troja campus</h2>
-							<p>We will transfer to Troja Campus where we will visit the low temperature/high field laboratories.</p>
-							<span class="time">16:30 - 18:00</span>
-							<p class="location"><span class="icon-map-o mr-2"></span>MGML Troja campus, Prague, CZ</p>
-						</div>
-					</div>
-				</div>
-				<a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-3" role="tab">
-					Wednesday, 21 October 2020
-				</a>
-				<div class="collapse" id="v-pills-3" role="tabpanel" data-parent="#accordion">
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img6.jpg);"></div>
-						<div class="text">
-							<h2>Tour of the ELI Research Center</h2>
-							<p> At the ELI Research Center we will first listen to lectures on different laser based techniques and then there will be a tour of the laser laboratories.</p>
-							<ul>
-								<li>ELI beamlines center introduction</li>
-								<li>Time-resolved spectroscopic ellipsometry (Dr. Shirly Espinoza; Dr. Martin Zahradník)</li>
-								<li>Ultrafast optical spectroscopy (Dr. Miroslav Kloz)</li>
-								<li>Laser based X-ray sources (Dr. Jaroslav Nejdl)</li>
-								<li>Experimental hall visit</li>
-							    </ul>
-							<span class="time">09:00 - 12:45</span>
-							<p class="location"><span class="icon-map-o mr-2"></span>ELI Beamlines, Dolní Břežany, CZ</p>
-						</div>
-					</div>
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img1.jpg);"></div>
-						<div class="text">
-							<h2>Student flash talk contest</h2>
-							<p>Each student will present their own research in a short presentation (5 minutes strict). 
-								The best presentation will win a small prize!</p>
-								<p>List of signed-in talks (alphabetical order):</p>
-								<ul>
-							  {% for talk in site.talks %}
-								<li>{{ talk.title }} ({{ talk.presenter }})</li>
-							  {% endfor %}
-							</ul>
-							<span class="time">14:00 - 17:00</span>
-							<p class="location"><span class="icon-map-o mr-2"></span>ELI Beamlines, Dolní Břežany, CZ</p>
-						</div>
-					</div>
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img0.jpg);"></div>
-						<div class="text">
-							<h2>Mini-school dinner</h2>
-							<p class="location"><span class="icon-map-o mr-2"></span>canceled</p>
-						</div>
-					</div>
-				</div>
-				<a class="nav-link-down ftco-animate collapsed" data-toggle="collapse" href="#v-pills-4" role="tab">
-					Thursday, 22 October 2020
-				</a>
-				<div class="collapse" id="v-pills-4" role="tabpanel" data-parent="#accordion">
-					<div class="speaker-wrap ftco-animate d-md-flex">
-						<div class="img speaker-img" style="background-image: url(images/img2.jpg);"></div>
-						<div class="text">
-							<h2>Lectures on open science and open data</h2>
-							<p> On the last day of our mini-school, we will dive into the topic of open science and open data with lectures about:<br>
-
-							<ul>
-								<li>Data and script publishing <a href="http://doi.org/10.5281/zenodo.4118189"><span class="icon-file-pdf-o"></span> slides</a></li>
-								<li>Figshare platform <a href="/assets/Figshare.pdf"><span class="icon-file-pdf-o"></span> slides</a></li></ul>
-							<span class="time">10:00 - 12:00</span>
-							<p class="location"><span class="icon-map-o mr-2"></span>Charles University, V Holešovičkách 2, Prague, CZ</p>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
 	            </div>
 	          </div>
 	        </div>

@@ -1,0 +1,136 @@
+- date: Wednesday, 19 October 2022
+  events:
+  - image: images/img9.jpg
+    name: Informal “get to know each other” event
+    text: 
+    time: 19:00 - 21:00
+    place: will be announced
+
+- date: Thursday, 20 October 2022
+  events:
+  - image: images/img3.jpg
+    name: Lectures on neutron scattering techniques
+    text: |
+      The lectures will give a broad overview on the different neutron scattering techniques available
+      at the MLZ:
+      - Neutron diffraction (Dr. Anatoliy Senyshyn)
+      - Small angle neutron scattering (Dr. Sebastian Mühlbauer)
+      - Inelastic neutron scattering (Dr. Astrid Schneidewind)
+      - Neutron spin echo techniques (Dr. Johanna K. Jochum)
+    time: 09:00 - 12:00
+    place: MLZ, Garching, DE
+  - image: images/.jpg
+    name: "Practicals, part 1"
+    text: |
+      Hands on session with virtual twins of the FRMII 
+      Tutor: C. Franz
+    time: 14:00 - 17:00
+    place: MLZ, Garching, DE
+
+- date: Friday, 21 October 2022
+  events:
+  - image: images/.jpg
+    name: "Practicals, part 2"
+    text: |
+      Hands on session with virtual twins of the FRMII 
+      Tutor: C. Franz
+    time: 9:00 - 12:00
+    place: MLZ, Garching, DE
+  - image: images/img8.jpg
+    name: Tour of the FRM II reactor
+    text: |
+      We will see the reactor pool and learn how neutrons are produced. 
+      The tour will continue in the neutron guidehall and experimental hall,
+      where 26 state-of-the-art instruments are operated.
+    time: 14:00 - 17:00
+    place: MLZ, Garching, DE
+
+- date: Saturday, 22 October 2022
+  events:
+  - image: images/.jpg
+    name: Trip to Prague
+    text: |
+      by train
+    time: 10:00 - 16:00
+    place: train
+
+- date: Sunday, 23 October 2022
+  events:
+  - image: images/.jpg
+    name: Hiking trip
+    text: |
+      to be announced
+    time: 10:00 - 18:00
+    place: Czech republic
+
+- date: Monday, 24 October 2022
+  events:
+  - image: images/img7.jpg
+    name: Lectures on crystal growth and laser based techniques
+    text: |
+      In Prague we will start with talks on magneto optics and sample growth before visiting the MGML facilities.
+      - Magneto optics (Dr. Martin Veis)
+      - Sample growth (Dr. Ross Harvey Colman)
+    time: 9:30 - 11:30
+    place: MGML Karlov campus, Prague, CZ
+  - image: images/img7.jpg
+    name: Tour of the MGML Karlov campus
+    text: |
+      After the lectures, there will be a guided tour through the crystal growth and pressure labs at Karlov Campus.
+    time: 13:30 - 15:00
+    place: MGML Karlov campus, Prague, CZ
+  - image: images/img11.jpg
+    name: Tour of the MGML Troja campus
+    text: |
+      We will transfer to Troja Campus where we will visit the low temperature/high field laboratories.
+    time: 16:00 - 17:30
+    place: MGML Troja campus, Prague, CZ
+
+- date: Tuesday, 25 October 2022
+  events:
+  - image: images/.jpg
+    name: Practicals at MGML laboratory
+    text: |
+      to be written
+    time: 9:00 - 16:00
+    place: MGML Troja campus, Prague, CZ
+
+- date: Wednesday, 26 October 2022
+  events:
+  - image: images/img6.jpg
+    name: Tour of the ELI Research Center
+    text: |
+      At the ELI Research Center we will first listen to lectures 
+      on different laser based techniques and then there will be 
+      a tour of the laser laboratories.
+      - ELI beamlines center introduction
+      - Time-resolved spectroscopic ellipsometry (tbc)
+      - Ultrafast optical spectroscopy (tbc)
+      - Laser based X-ray sources (tbc)
+      - Experimental hall visit
+    time: 09:00 - 12:45
+    place: ELI Beamlines, Dolní Břežany, CZ
+  - image: images/img1.jpg
+    name: Student flash talk contest
+    text: |
+      Each student will present their own research in a short presentation (5 minutes strict). 
+      The best presentation will win a small prize!
+    time: 14:00 - 17:00
+    place: ELI Beamlines, Dolní Břežany, CZ
+  - image: images/img0.jpg
+    name: Mini-school dinner
+    text: |
+      to be written
+    time: 18:00 - 22:00
+    place: to be announced
+
+- date: Thursday, 27 October 2022
+  events:
+  - image: images/img2.jpg
+    name: Lectures on open science and open data
+    text: |
+      On the last day of our mini-school, we will dive into the topic of open science and open data with lectures about:
+      - Data and script publishing
+      - Figshare platform
+    time: 10:00 - 12:00
+    place: Charles University, V Holešovičkách 2, Prague, CZ
