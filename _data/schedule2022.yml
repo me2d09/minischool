@@ -1,4 +1,4 @@
-- date: Wednesday, 19 October 2022
+- date: Wednesday, 19 October
   events:
   - image: images/img9.jpg
     name: Informal “get to know each other” event
@@ -6,7 +6,7 @@
     time: 19:00 - 21:00
     place: will be announced
 
-- date: Thursday, 20 October 2022
+- date: Thursday, 20 October
   events:
   - image: images/img3.jpg
     name: Lectures on neutron scattering techniques
@@ -27,7 +27,7 @@
     time: 14:00 - 17:00
     place: MLZ, Garching, DE
 
-- date: Friday, 21 October 2022
+- date: Friday, 21 October
   events:
   - image: images/.jpg
     name: "Practicals, part 2"
@@ -45,7 +45,7 @@
     time: 14:00 - 17:00
     place: MLZ, Garching, DE
 
-- date: Saturday, 22 October 2022
+- date: Saturday, 22 October
   events:
   - image: images/.jpg
     name: Trip to Prague
@@ -54,7 +54,7 @@
     time: 10:00 - 16:00
     place: train
 
-- date: Sunday, 23 October 2022
+- date: Sunday, 23 October
   events:
   - image: images/.jpg
     name: Hiking trip
@@ -63,7 +63,7 @@
     time: 10:00 - 18:00
     place: Czech republic
 
-- date: Monday, 24 October 2022
+- date: Monday, 24 October
   events:
   - image: images/img7.jpg
     name: Lectures on crystal growth and laser based techniques
@@ -86,7 +86,7 @@
     time: 16:00 - 17:30
     place: MGML Troja campus, Prague, CZ
 
-- date: Tuesday, 25 October 2022
+- date: Tuesday, 25 October
   events:
   - image: images/.jpg
     name: Practicals at MGML laboratory
@@ -95,7 +95,7 @@
     time: 9:00 - 16:00
     place: MGML Troja campus, Prague, CZ
 
-- date: Wednesday, 26 October 2022
+- date: Wednesday, 26 October
   events:
   - image: images/img6.jpg
     name: Tour of the ELI Research Center
@@ -124,7 +124,7 @@
     time: 18:00 - 22:00
     place: to be announced
 
-- date: Thursday, 27 October 2022
+- date: Thursday, 27 October
   events:
   - image: images/img2.jpg
     name: Lectures on open science and open data

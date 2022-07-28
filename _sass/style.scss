@@ -717,7 +717,7 @@ h1, h2, h3, h4, h5,
 			margin-bottom: 0;
 		}
 		.nav-link{
-			padding: 16px 30px !important;
+			padding: 4px 14px !important;
 			margin-bottom: 0;
 			border: $border-style;
 			@if $round-corners {
@@ -727,7 +727,7 @@ h1, h2, h3, h4, h5,
 				color: $white;
 				@include border-radius(0);
 			  }
-			font-size: 18px;
+			font-size: 14px;
 			font-weight: 700;
 			position: relative;
 			display: inline-block;
@@ -763,7 +763,7 @@ h1, h2, h3, h4, h5,
 
 			span{
 				display: block;
-				font-size: 20px;
+				font-size: 16px;
 				font-weight: 200;
 			}
 			@include media-breakpoint-down(sm){
