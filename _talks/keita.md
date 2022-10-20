@@ -3,7 +3,7 @@
   presenter: Mohamed Keïta
   order: 
   time: 
-  year: 2022
+  year: 2022canceled
 ---
 Owing to low density (3.8-4.0g/cm3), high specific strength and stiffness, excellent creep resistance, and good corrosion resistance, the β-solidifying TNM alloys with properly aligned (α2+γ) lamellar structure have been considered as excellent candidates for modern turbine blades. Recently, it has been evidenced that when the γ lamellae are oriented to the load direction the mechanical properties of the alloys can be greatly increased, thus, lamella orientation control has become an interesting topic for property optimization. 
 
