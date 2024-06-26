@@ -5,6 +5,7 @@ $font-primary: 'Nunito Sans',Arial, sans-serif;
 
 $light-theme: false !default;;
 $theme2022: false !default;;
+$theme2024: false !default;;
 
 $round-corners: false;
 $white: #fff;
@@ -30,6 +31,15 @@ $border-style: 2px solid transparent;
 	$black-light: lighten($black,10%);
 	$primary: #ff9966;
 	$primary-dark: #ff9966;
+} 
+
+@if $theme2024 {
+	$round-corners: true;
+	$border-style: 2px solid $black;
+	$black: #000; 
+	$black-light: lighten($black,10%);
+	$primary: #D55692;
+	$primary-dark: #C03476;
 } 
 
 // $darken: #3a4348;
