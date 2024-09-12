@@ -53,7 +53,9 @@
   - image: images/img6.jpg
     name: Visit of the Training reactor VR-1
     text: |
-      Details will be published later
+      The training reactor VR-1 is a lightwater reactor focused mainly at education 
+      of students as well as specialists from the nuclear field.
+      The reactor staff will introduce the basics of nuclear reactor technology and provide participants with a tour on the facility.
     time: 09:00 - 11:00
     place: MGML Troja campus, Prague, CZ
   - image: images/img1.jpg
