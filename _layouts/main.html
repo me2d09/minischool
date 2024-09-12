@@ -68,6 +68,12 @@
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5">
+			{% if 1 == 1 %}
+			<form class="request-form ftco-animate">
+				<h2>Registration is closed</h2>
+				<p>The capacity of the school was filled.</p>
+			  </form>
+			{% else %}
 			<form action="https://formspree.io/f/moqpenvg" method="POST" class="request-form ftco-animate">
 				<h2>Join Mini-school</h2>
 					  <div class="form-group">
@@ -83,6 +89,7 @@
 					<input type="submit" value="Register" class="btn btn-primary py-3 px-4">
 				</div>
 			</form>
+			{% endif %}
           </div>
         </div>
       </div>
