@@ -1,8 +1,8 @@
 ---
   title: "Structural variations in lanthanide oxalates series"
-  presenter: Daniela Veronika Ciesarová
-  order: 1
-  time: "13:30"
+  presenter: Daniela Veronika Uríková
+  order: 
+  time: 
   year: 2024
 ---
 Oxalates are simple, low-cost, but crucial compounds in the technology
