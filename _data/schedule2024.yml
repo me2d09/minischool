@@ -4,7 +4,7 @@
     name: Informal “get to know each other” event
     text: 
     time: 19:00 - 21:00
-    place: Prague
+    place: Bernard Pub Bruselská, Prague
 
 - date: Wednesday, 2 October
   events:
@@ -13,13 +13,13 @@
     text: |
       In Prague we will start with talks on magneto optics and sample growth before visiting the MGML facilities.
       - Magneto optics (Dr. Martin Veis)
-      - Sample growth (Dr. Ross Harvey Colman)
+      - Bulk properties measurement (Dr. Petr Čermák)
     time: 9:30 - 11:30
     place: MGML Karlov campus, Prague, CZ
   - image: images/.jpg
     name: Practicals at MGML laboratory
     text: |
-      Measuring magnetization using different techniques
+      Measuring specific heat and its evaluation
     time: 13:00 - 17:00
     place: MGML Troja campus, Prague, CZ
 
@@ -99,8 +99,8 @@
       The lectures will give a broad overview on the different neutron scattering techniques available
       at the MLZ:
       - Neutron diffraction (Dr. Anatoliy Senyshyn)
-      - Inelastic neutron scattering (Dr. Astrid Schneidewind)
-      - Small angle neutron scattering (Dr. Sebastian Mühlbauer)
+      - Small angle neutron scattering (Dr. Michal Dembski-Villalta)
+      - Inelastic neutron scattering (Dr. Lukas Beddrich)
       - Neutron spin echo techniques (Dr. Johanna K. Jochum)
     time: 09:00 - 12:00
     place: MLZ, Garching, DE
