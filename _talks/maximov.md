@@ -1,8 +1,8 @@
 ---
   title: "Magnetic Phasetransitions in TbFeO3"
   presenter: Leo Maximov
-  order: 
-  time: 
+  order: 9
+  time: 15:01
   year: 2024
 ---
 Rare-earth (RE) orthoferrites have been extensively studied for their multiferroic properties and magnetic transitions due to interactions between Fe and RE magnetic sublattices. TbFeO3 in particular undergoes two spin-reorientation transitions: 

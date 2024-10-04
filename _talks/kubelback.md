@@ -1,8 +1,8 @@
 ---
-  title: "Neutron scattering of HoB2"
+  title: "Search for Quantum Criticality in CePt"
   presenter: Florian Kübelbäck
-  order: 
-  time: 
+  order: 12
+  time: 15:22
   year: 2024
 ---
-HoB2 undergoes a gigantic magnetic entropy change. Neutron diffraction experiments show that this effect is linked to the  spin reorientation transition which is likely associated with quadrupolar ordering, and strong ferromagnetic fluctuations above the Curie temperature.
+We report the growth of single crystal of CePt by means of the optical floating-zone method and the investigation of the low-temperature properties of this ferromagnetic compound.
