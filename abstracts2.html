@@ -3,5 +3,7 @@
 ---
 {% assign sorted = site.talks | sort: 'order'  %}
 {% for talk in sorted %}
+{% if talk.year == 2024 %}
 <b>{{ talk.presenter }}</b><br />
+{% endif %}
 {% endfor %}
