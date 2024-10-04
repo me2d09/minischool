@@ -2,7 +2,7 @@
   title: "Visualisation of residual stress induced changes of magnetic flux using neutron grating interferometry (nGI)"
   presenter: Paul Tkacz
   order: 1
-  time: 14:05
+  time: "14:05"
   year: 2024
 ---
 Using neutron grating interferometry (nGI) as a unique tool,
